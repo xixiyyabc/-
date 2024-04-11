@@ -1,0 +1,111 @@
+#bar_container{
+    float: left;
+    color: #ffffff;
+    width: 50%;
+}
+
+#box02_text{
+    float: left;
+}
+
+.bar {
+  height: 40px;
+  width: 0;
+  position: relative;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+
+
+
+.bar.red {
+  background-color: #cf4647;
+  background-image: repeating-linear-gradient(-45deg, #cf4647, #cf4647 30px, #da6e6f 30px, #da6e6f 60px);
+  background-size: 600px 100%;
+  border-bottom: 5px solid #9f292a;
+}
+
+.bar.orange {
+  background-color: #eb7b59;
+  background-image: repeating-linear-gradient(-45deg, #eb7b59, #eb7b59 30px, #f09f87 30px, #f09f87 60px);
+  background-size: 600px 100%;
+  border-bottom: 5px solid #dd481b;
+}
+
+.bar.green {
+  background-color: #14c3a2;
+  background-image: repeating-linear-gradient(-45deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
+  background-size: 600px 100%;
+  border-bottom: 5px solid #0d7e68;
+}
+
+.bar.blue {
+  background-color: #27708d;
+  background-image: repeating-linear-gradient(-45deg, #27708d, #27708d 30px, hsl(195, 63%, 49%) 30px, hsl(195, 63%, 49%) 60px);
+  background-size: 600px 100%;
+  border-bottom: 5px solid #1e3f4a;
+}
+
+
+.bar.purple {
+  background-color: #a44e9c;
+  background-image: repeating-linear-gradient(-45deg, #a44e9c, #a44e9c 30px, #df5ac4 30px, #df5ac4 60px);
+  background-size: 600px 100%;
+  border-bottom: 5px solid #591f49;
+}
+
+.bar.gray {
+  background-color: #595b5a;
+  background-image: repeating-linear-gradient(-45deg, #595b5a, #595b5a 30px, #727574 30px, #727574 60px);
+  background-size: 600px 100%;
+  border-bottom: 5px solid #333434;
+}
+
+
+
+
+.bar.active:after, .bar.active:before {
+  opacity: 1;
+  font-size: 16px;
+}
+
+
+.bar:before {
+  /* 技能内容 */
+  content: attr(data-skill);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  height: 40px;
+  font-style: italic;
+  opacity: 0;
+
+}
+
+
+.bar.active[data-percent="25"] {
+  width: 25%;
+}
+
+.bar.active[data-percent="30"] {
+  width: 30%;
+}
+
+.bar.active[data-percent="35"] {
+  width: 35%;
+}
+
+.bar.active[data-percent="40"] {
+  width: 40%;
+}
+
+.bar.active[data-percent="45"] {
+  width: 45%;
+}
+
+.bar.active[data-percent="50"] {
+  width: 50%;
+}
+
